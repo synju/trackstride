@@ -1,6 +1,6 @@
 # TRACKSTRIDE
-## A Racecard Tracking SPA built with Laravel 10, Vuejs3, Vue-Router, Axios, Vite & Tailwindcss
-### Includes
+## A Racecard Tracking SPA
+### Features
 - Racecard listing
 - Race listing per Racecard (in time order)
 - Search Widget to search for horses/jockeys shown on Individual Racecard Races
