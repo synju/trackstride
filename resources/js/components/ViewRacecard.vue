@@ -76,9 +76,6 @@
 		</div>
 	</div>
 
-	<!-- Racecard -->
-	<div id="racecard" class="row"></div>
-
 	<!-- Races -->
 	<div id="races" class="row">
 		<!-- List Races if found -->
