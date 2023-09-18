@@ -16,7 +16,7 @@
 	})
 
 	onMounted(async() => {
-		getRacecards();
+		await getRacecards();
 	});
 
 	const getRacecards = async() => {
@@ -32,7 +32,6 @@
 				races.forEach((race) => {
 					let horses = race.horses;
 					horses.forEach((horse) => {
-						// Add each silkFilename to the Set
 						silkFileNamesSet.add(horse.silksFilename);
 					});
 				});
@@ -54,9 +53,7 @@
 	};
 
 	const prevRacecard = () => {
-		currentRacecardIndex.value =
-			(currentRacecardIndex.value - 1 + racecards.value.length) %
-			racecards.value.length;
+		currentRacecardIndex.value = (currentRacecardIndex.value - 1 + racecards.value.length) % racecards.value.length;
 	};
 
 	const handleImageError = (index) => {

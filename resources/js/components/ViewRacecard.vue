@@ -9,7 +9,7 @@
 	let currentRaceIndex = ref(0);
 
 	onMounted(async() => {
-		getRacecard();
+		await getRacecard();
 	});
 
 	const props = defineProps({
@@ -69,7 +69,7 @@
 	<div class="row">
 		<h3>Races</h3>
 		<div class="col-md-12 mb-3 px-0 d-flex align-items-center">
-			<input type="hidden" class="form-control" v-model="currentRaceIndex" :min="1" :max="races.length" />
+			<input type="hidden" class="form-control" v-model="currentRaceIndex" :min="1" :max="races.length"/>
 			<button @click="prevRace" class="btn btn-primary">Previous</button>
 			<span class="px-2 fs-3">Race {{ currentRaceIndex + 1 }}</span>
 			<button @click="nextRace" class="btn btn-primary">Next</button>

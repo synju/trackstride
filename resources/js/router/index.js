@@ -24,7 +24,7 @@ const routes = [
 		props:true
 	},
 	{
-		path:'/viewPastRuns/:itw/:raceIndex/:horseId',
+		path:'/viewpastpuns/:itw/:raceIndex/:horseId',
 		component:ViewPastRuns,
 		props:true
 	},

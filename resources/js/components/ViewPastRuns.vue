@@ -49,25 +49,23 @@
 	}
 
 	const formatDate = (dateString) => {
-		// Assuming dateString is in the format "31AUG22"
 		const day = dateString.substring(0, 2);
 		const month = dateString.substring(2, 5);
 		const year = dateString.substring(5, 7);
 
-		// You can map month abbreviations to full month names if needed
 		const monthMap = {
-			JAN: 'January',
-			FEB: 'February',
-			MAR: 'March',
-			APR: 'April',
-			MAY: 'May',
-			JUN: 'June',
-			JUL: 'July',
-			AUG: 'August',
-			SEP: 'September',
-			OCT: 'October',
-			NOV: 'November',
-			DEC: 'December',
+			JAN:'January',
+			FEB:'February',
+			MAR:'March',
+			APR:'April',
+			MAY:'May',
+			JUN:'June',
+			JUL:'July',
+			AUG:'August',
+			SEP:'September',
+			OCT:'October',
+			NOV:'November',
+			DEC:'December',
 		};
 
 		const fullMonth = monthMap[month.toUpperCase()] || month;

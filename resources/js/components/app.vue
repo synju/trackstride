@@ -15,7 +15,7 @@
 			let searchResult = await searchHorsesAndJockeys(searchQuery);
 
 			if(searchQuery !== "" && searchResult.length > 0) {
-				console.log("Search Result",searchResult);
+				//console.log("Search Result",searchResult);
 				searchResults.value = await searchHorsesAndJockeys(searchQuery);
 			}
 			else {

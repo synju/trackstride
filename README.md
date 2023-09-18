@@ -1,5 +1,5 @@
 # TRACKSTRIDE
-#### A Racecard Tracking SPA using Laravel 10, VueJS 3, Vite, Axios and finally Bootstrap for Styling.
+#### A Racecard Tracking SPA using Laravel 10, VueJS 3, Vue-Loader, Vue-Router, Vite, Axios and finally Bootstrap for Styling.
 #### Features
 - Racecard listing index page, displaying each racecard separately.
 - Each Racecard has a View Races button linking to individual races.

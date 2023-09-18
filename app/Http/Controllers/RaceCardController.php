@@ -9,9 +9,8 @@ class RaceCardController extends Controller {
 		// Get racecard JSON files from "racecards" directory
 		$files = Storage::disk('local')->files('racecards');
 
-		$racecards = [];
-
 		// Read each file JSON content.
+		$racecards = [];
 		foreach($files as $file) {
 			$contents = Storage::disk('local')->get($file);
 
