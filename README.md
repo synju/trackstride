@@ -10,7 +10,7 @@
 - Past Runs shown in a list.
 - All areas have a Back button.
 - Search Widget to search for horses/jockeys.
-- Each search result will be horses/entries linked to corresponding racecard/races and have a button linking to a Race.
+- Each search result will be horses/entries linked to racecard/races and have a button linking to a Race.
 - Each Race has a button linking to corresponding horses.
 - Responsive Design.. Presentable on mobile and desktop.
 
