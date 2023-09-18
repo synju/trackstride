@@ -21,3 +21,4 @@ Route::middleware('auth:sanctum')->get('/user', function(Request $request) {
 });
 
 Route::get('/get_all_racecards', [RaceCardController::class, 'get_all_racecards']);
+Route::get('/get_racecard/{itw}', [RaceCardController::class, 'get_racecard']);

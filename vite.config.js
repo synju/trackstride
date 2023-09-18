@@ -10,4 +10,10 @@ export default defineConfig({
         }),
         vue()
     ],
+		css: {
+			preprocessorOptions: {
+				// Add Bootstrap to the list of CSS dependencies
+				additionalData: `@import 'bootstrap/dist/css/bootstrap.css';`
+			}
+		},
 });

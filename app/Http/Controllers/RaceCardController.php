@@ -2,11 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 
 class RaceCardController extends Controller {
-	public function get_all_racecards() {
+	public function loadJSONRacecards() {
 		// Get racecard JSON files from "racecards" directory
 		$files = Storage::disk('local')->files('racecards');
 
@@ -23,8 +22,30 @@ class RaceCardController extends Controller {
 			$racecards[] = $racecardData;
 		}
 
+		return $racecards;
+	}
+
+	public function get_all_racecards() {
+		$racecards = $this->loadJSONRacecards();
+
 		return response()->json([
 			'racecards' => $racecards
+		], 200);
+	}
+
+	public function get_racecard($itw) {
+		$racecards = $this->loadJSONRacecards();
+
+		$racecard = null;
+		foreach($racecards as $rc) {
+			if($rc['racecard']['itw'] === $itw) {
+				$racecard = $rc['racecard'];
+				break;
+			}
+		}
+
+		return response()->json([
+			'racecard' => $racecard
 		], 200);
 	}
 }
